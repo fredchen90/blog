@@ -100,4 +100,4 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/fredchen90/blog.git
-  branch: master
+  branch: run-page
