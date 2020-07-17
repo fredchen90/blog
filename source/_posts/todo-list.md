@@ -5,6 +5,7 @@ tags: todo list
 ---
 ## 基本事項
 1. 持續更新**文章**
+2. 單元測試 - Jest
 
 ## 技術研究
 1. **google map**
