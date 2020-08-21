@@ -26,6 +26,19 @@ nav {
 	margin: 30px;
 	background-color: $color-primary;
 }
+
+// 搭配變數 random
+$hotImage: sport live chess lottery slot fish;
+@mixin hot-image {
+  @each $img in $hotImage {
+    .hotgame-#{$img} {
+      height: 7rem;
+      background: url('./assets/hot-#{$img}.png') no-repeat;
+      background-size: 100% 100%;
+      margin-top: 0.5rem;
+    }
+  }
+}
 ```
 ## extend
 主要是拿來合併相同程式碼用的
