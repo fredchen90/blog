@@ -23,7 +23,7 @@ body {
 }
 ```
 ### clip-path
-透過剪裁方式改變形狀,以(x,y)方式來裁切.
+<font size="2">透過剪裁方式改變形狀,以(x,y)方式來裁切.</font>
 ``` css
 .polygon {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -62,3 +62,27 @@ body {
 }
 ```
 ![](animation-sample.gif)
+
+### z-index
+<font size="2">以空間的概念來解釋,面對電腦螢幕,左右方向為 x 軸,上下則為 y 軸,面對自己的這個方向就是 z 軸囉！z-index 的值越大,代表離自己越靠近。反之 z-index 的值如果越小,就代表離自己越遠.</font>
+
+<font color=#FF0000 size="2">使用 z-index 必須搭配 position 語法來設定區塊位置.</font>
+``` css
+.review {
+    .text {
+        position: relative;
+        margin-right: 2rem;
+        z-index: 10;
+    }
+    .review::before {
+        content: "\201C";
+        position: absolute;
+        top: -0.35rem;
+        left: -1rem;
+        line-height: 1;
+        font-size: 20rem;
+        z-index: 1,
+    }
+}
+```
+![](z-index.png)
