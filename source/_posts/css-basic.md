@@ -3,6 +3,14 @@ title: CSS筆記
 date: 2020-07-20 21:00:26
 tags: css
 ---
+### css 權重
+<font size="2">優先順序,上至下</font>
+> !important
+> element (style)
+> id
+> css 類別選擇器
+> html tag
+
 ### default
 ``` css
 *,
@@ -13,9 +21,13 @@ tags: css
     box-sizing: inherit;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 html {
-    //10px
-    font-size: 62.5%;
+    font-size: 62.5%; /* 10px */
 }
 
 body {
